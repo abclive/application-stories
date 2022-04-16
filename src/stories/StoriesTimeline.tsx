@@ -1,25 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 
-function StoriesTimeline({active, stories}: {active: number, stories: number[]}) {
-    const updateRate = 100;
+function StoriesTimeline({elapsed, active, stories}: {elapsed: number, active: number, stories: number[]}) {
     const activeStoryLength = stories[active];
-    const [storyCompletion, setStoryCompletion] = useState(0);
     const progressElt = useRef(null);
 
     useEffect(() => {
-        setStoryCompletion(0);
-        const interval = setInterval(() => {
-            setStoryCompletion((completion) => Math.min(completion + (updateRate / 10 / activeStoryLength), 100));
-        }, updateRate);
-
-        return () => clearInterval(interval);
-    }, [active]);
-
-    useEffect(() => {
         if (progressElt.current) {
-            (progressElt.current as HTMLElement).style.width = `${storyCompletion}%`;
+            (progressElt.current as HTMLElement).style.width = `${Math.min(elapsed / (activeStoryLength * 10), 100)}%`;
         }
-    }, [storyCompletion]);
+    }, [elapsed]);
 
     return (
         <div className="flex absolute z-10 flex-row gap-2 p-2 w-full">
