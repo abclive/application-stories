@@ -49,7 +49,7 @@ function StoriesWindow() {
             if (!isPaused) {
                 setIsPaused(true);
             }
-        }, 100) as any;
+        }, 300) as any;
     }
 
     function prevStory() {
