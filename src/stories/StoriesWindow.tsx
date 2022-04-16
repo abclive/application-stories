@@ -32,7 +32,9 @@ function StoriesWindow() {
 
     useEffect(() => {
         if (elapsedTime >= currentStory.time * 1000) {
-            setElapsedTime(0);
+            if (activeStory < stories.length - 1) {
+                setElapsedTime(0);
+            }
             setActiveStory(active => Math.min(active + 1, stories.length - 1));
         }
     }, [elapsedTime, currentStory]);
