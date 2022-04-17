@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 function StoriesTimeline({elapsed, active, stories}: {elapsed: number, active: number, stories: number[]}) {
     const activeStoryLength = stories[active];
@@ -8,13 +8,13 @@ function StoriesTimeline({elapsed, active, stories}: {elapsed: number, active: n
         if (progressElt.current) {
             (progressElt.current as HTMLElement).style.width = `${Math.min(elapsed / (activeStoryLength * 10), 100)}%`;
         }
-    }, [elapsed]);
+    }, [elapsed, activeStoryLength]);
 
     return (
-        <div className="flex absolute z-10 flex-row gap-2 p-2 w-full">
+        <div className="absolute z-10 flex flex-row w-full gap-2 p-2">
             {stories.map((story, index) => 
-                <div className={'relative flex flex-1 h-2 bg-white rounded ' + ((index >= active) ? 'bg-opacity-20' : '')} key={index}>
-                    {(index === active) && <div ref={progressElt} className="absolute z-10 h-full bg-white rounded transition-all duration-75"></div>}
+                <div className={'relative flex flex-1 h-2 rounded ' + ((index >= active) ? 'bg-opacity-20 bg-black' : 'bg-white')} key={index}>
+                    {(index === active) && <div ref={progressElt} className="absolute z-10 h-full transition-all duration-75 bg-white rounded"></div>}
                 </div>
             )}
         </div>

@@ -1,15 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
-import GreetStory from "./content/GreetStory";
-import IntroStory from './content/IntroStory';
 import StoriesTimeline from "./StoriesTimeline";
+import { stories } from "./timeline";
 
 function StoriesWindow() {
 
-    const stories = [
-        {component: <GreetStory/>, time: 5},
-        {component: <IntroStory/>, time: 3},
-        {component: <GreetStory/>, time: 5},
-    ];
     const [activeStory, setActiveStory] = useState(0);
     const currentStory = stories[activeStory];
 
@@ -37,7 +31,7 @@ function StoriesWindow() {
             }
             setActiveStory(active => Math.min(active + 1, stories.length - 1));
         }
-    }, [elapsedTime, currentStory]);
+    }, [elapsedTime, stories.length, activeStory, currentStory]);
 
     function clearPause() {
         if (pauseTimer.current) {
@@ -73,8 +67,8 @@ function StoriesWindow() {
     }
 
     return (
-        <div className="fixed w-full h-full">
-            <div className="flex absolute z-10 w-full h-full opacity-0">
+        <div className="relative w-full h-full">
+            <div className="absolute z-10 flex w-full h-full opacity-0">
                 <div className="flex-1 h-full bg-red-500" onPointerDown={pause} onPointerUp={prevStory}>{activeStory - 1}</div>
                 <div className="flex-1 h-full bg-green-500" onPointerDown={pause} onPointerUp={nextStory}>{activeStory + 1}</div>
             </div>
