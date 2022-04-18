@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { SpringContext } from "react-spring";
 import StoriesTimeline from "./StoriesTimeline";
 import { stories } from "./timeline";
 
@@ -31,7 +32,7 @@ function StoriesWindow() {
             }
             setActiveStory(active => Math.min(active + 1, stories.length - 1));
         }
-    }, [elapsedTime, stories.length, activeStory, currentStory]);
+    }, [elapsedTime, activeStory, currentStory]);
 
     function clearPause() {
         if (pauseTimer.current) {
@@ -67,14 +68,16 @@ function StoriesWindow() {
     }
 
     return (
-        <div className="relative w-full h-full">
-            <div className="absolute z-10 flex w-full h-full opacity-0">
-                <div className="flex-1 h-full bg-red-500" onPointerDown={pause} onPointerUp={prevStory}>{activeStory - 1}</div>
-                <div className="flex-1 h-full bg-green-500" onPointerDown={pause} onPointerUp={nextStory}>{activeStory + 1}</div>
+        <SpringContext pause={isPaused}>
+            <div className="relative w-full h-full">
+                <div className="absolute z-10 flex w-full h-full opacity-0">
+                    <div className="flex-1 h-full bg-red-500" onPointerDown={pause} onPointerUp={prevStory}>{activeStory - 1}</div>
+                    <div className="flex-1 h-full bg-green-500" onPointerDown={pause} onPointerUp={nextStory}>{activeStory + 1}</div>
+                </div>
+                <StoriesTimeline elapsed={elapsedTime} active={activeStory} stories={stories.map((story) => story.time)}/>
+                <div className="relative h-full">{currentStory.component}</div>
             </div>
-            <StoriesTimeline elapsed={elapsedTime} active={activeStory} stories={stories.map((story) => story.time)}/>
-            <div className="relative h-full">{currentStory.component}</div>
-        </div>
+        </SpringContext>
     );
 }
 
