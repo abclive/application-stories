@@ -14,7 +14,7 @@ export const stories = [
     {component: <Studies/>, time: 12},
     {component: <DocExperience/>, time: 12},
     {component: <CollectiveExperience/>, time: 12},
-    {component: <Projects/>, time: 60},
+    {component: <Projects/>, time: 15},
     {component: <Summary/>, time: 9},
     {component: <CodeReview/>, time: 8},
     {component: <Contact/>, time: 20}
