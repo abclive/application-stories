@@ -14,7 +14,7 @@ const translations = {
     },
     restaurants_tech: [{fr_CA: "Typescript", en_CA: "Typescript"}, {fr_CA: "Pusher", en_CA: "Pusher"}, {fr_CA: "PWA", en_CA: "PWA"}],
     restaurants_description: {
-        fr_CA: "Une app multi client pour restaurants comprenant un panel d'administration et un systen de point de ventes.",
+        fr_CA: "Une app multi client pour restaurants comprenant un panel d'administration et un système de point de ventes.",
         en_CA: "A multi-tenancy app for restaurants featuring a back-end administration panel and a Point of Sale system."
     },
     rentals_title: {
