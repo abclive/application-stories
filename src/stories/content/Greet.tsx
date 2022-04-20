@@ -11,14 +11,30 @@ const translations = {
         fr_CA: "Ceci est une candidature interactive pour la position de Developpeur web Full-stack.",
         en_CA: "This is my application (pun intended) for your Full-stack Web Developer position."
     },
-    instructions: {
-        fr_CA: "Naviguez d'un écran à l'autre en tappant sur la gauche ou la droite de la page comme n'importe quelle autre app avec des stories. Pour pauser, gardez votre doigt pressé sur l'écran.",
-        en_CA: "You can navigate like any other stories app from screen to screen by tapping the left or right side of the page. You can pause by holding your finger on the screen."
-    },
-    instructions_desktop: {
-        fr_CA: "Cette experience est optimisée pour une utilisation sur téléphone. Naviguez d'un écran à l'autre en cliquant sur les fleches ou en appuyant sur les touches fléchées du clavier. Vous pouvez pauser en appuyant sur espace.",
-        en_CA: "This experience is optimized for smartphones. You can navigate by using the arrows on each side or by using the arrow keys of your keyboard. You can also pause by pressing the spacebar."
-    }
+    instructions: [
+        {
+            fr_CA: "Naviguez d'un écran à l'autre en tappant sur la gauche ou la droite de la page.",
+            en_CA: "You can navigate from screen to screen by tapping the left or right side of the page."
+        },
+        {
+            fr_CA: "Pour pauser, gardez votre doigt pressé sur l'écran.",
+            en_CA: "You can pause by holding your finger on the screen.",
+        },
+    ],
+    instructions_desktop: [
+        {
+            fr_CA: "Cette experience est optimisée pour une utilisation sur téléphone.",
+            en_CA: "This experience is optimized for smartphones."
+        },
+        {
+            fr_CA: "Naviguez d'un écran à l'autre en cliquant sur les fleches ou en appuyant sur les touches fléchées du clavier.",
+            en_CA: "Navigate by using the arrows on each side or by using the arrow keys of your keyboard."
+        },
+        {
+            fr_CA: "Vous pouvez pauser en appuyant sur espace.",
+            en_CA: "You can pause by pressing the spacebar."
+        }
+    ]
 }
 
 function Greet() {
@@ -35,8 +51,8 @@ function Greet() {
             <animated.p className="flex w-full px-5" style={descSpring}>{t.description}</animated.p>
             <animated.div className="p-4 mx-4 mt-16 bg-black rounded bg-opacity-20" style={instrSpring}>
                 <p className="text-lg font-semibold">📖 Instructions</p>
-                <p className="flex w-full md:hidden">{t.instructions}</p>
-                <p className="hidden w-full md:flex">{t.instructions_desktop}</p>
+                {t.instructions.map((instructions, index) => <p key={index} className="flex w-full py-2 md:hidden">{instructions}</p>)}
+                {t.instructions_desktop.map((instructions, index) => <p key={index} className="hidden w-full py-2 md:flex">{instructions}</p>)}
             </animated.div>
         </Wrapper>
     );
