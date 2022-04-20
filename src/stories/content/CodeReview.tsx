@@ -9,8 +9,8 @@ const translations = {
         en_CA: "See for yourself!"
     },
     description: {
-        fr_CA: "J'ai developpé cette application de zéro en utilisant React, Typescript et Tailwind, vous pouvez inspecter le code source sur Github.",
-        en_CA: "I developed this app from scratch using React, Typescript, Tailwind, and you can check out the code on Github."
+        fr_CA: "J'ai developpé cette application pour l'occasion en utilisant React, Typescript et Tailwind, vous pouvez en inspecter le code source sur Github.",
+        en_CA: "I developed this app from scratch using React, Typescript, Tailwind, and you can check out its source code on Github."
     },
     cta: {
         fr_CA: "💻 Voir le code source",

@@ -18,7 +18,7 @@ const translations = {
     },
     subtitle: {
         fr_CA: "Un école unique en son genre avec un cursus centré sur la pratique et sur l'apprentissage par les pairs.",
-        en_CA: "A very unique school with a project oriented paradigm and with peer learning at the heart of its curriculum."
+        en_CA: "An innovative school with a project based pedagogy and with peer learning at the heart of its curriculum."
     },
     skills: {
         fr_CA: "🧰 J'y ai appris le C, C++, PHP et le JS, ainsi que la gestion du temps en situation de stress, la revue de code et le travail collaboratif.",

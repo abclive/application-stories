@@ -8,7 +8,7 @@ const translations = {
         en_CA: "I'm Raphael"
     },
     description: {
-        fr_CA: "Je suis un developpeur passionné par la tech, le cinéma et l'urbanisme. Je travaille dans le developpement web depuis 2016, j'ai conçu des applications, dashboards et APIs dans divers domaines.",
+        fr_CA: "Je suis un développeur passionné par la tech, le cinéma et l'urbanisme. Je travaille dans le développement web depuis 2016, j'ai conçu des applications, dashboards et APIs pour divers domaines.",
         en_CA: "A developer passionate about tech, cinema and urbanism. I've been working in web development since 2016, building applications, dashboards, and APIs in diverse domains."
     },
     next: {

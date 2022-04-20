@@ -1,5 +1,5 @@
 import { useLittera } from "@assembless/react-littera";
-import { useSpring, useTrail, animated, config } from "react-spring";
+import { useTrail, animated, config } from "react-spring";
 import ExperienceTitle from "../ui/ExperienceTitle";
 import Pill from "../ui/Pill";
 import Wrapper from "../ui/Wrapper";
@@ -21,15 +21,15 @@ const translations = {
     ],
     tasks: [
         {
-            fr_CA: "✏️ Intégré des expériences utilisateurs depuis Figma vers des composants JavaScript.",
+            fr_CA: "✏️ Intégration d'expériences utilisateurs depuis Figma vers des composants JavaScript.",
             en_CA: "✏️ Integrated user experiences from Figma to JavaScript components."
         },
         {
-            fr_CA: "⚙️ Mené le développement de projets d'applications complexes et rafraîchi la suite technologique et les processus techniques de la compagnie.",
+            fr_CA: "⚙️ Responsable du développement de projets d'applications complexes et du rafraîchissement de la suite technologique et des processus techniques de la compagnie.",
             en_CA: "⚙️ Led development on complex application projects and revised the company's tech stack and workflows."
         },
         {
-            fr_CA: "🔨 Interfacé et organisé plusieurs APIs, optimisé leur contenu pour les afficher dans des expériences utilisateurs précises.",
+            fr_CA: "🔨 Interfaçage et organisation de plusieurs APIs, optimisation de leur contenu pour les afficher dans des expériences utilisateurs précises.",
             en_CA: "🔨 Interfaced and mapped several APIs, optimizing their content for display in tailored user experiences."
         }
     ]

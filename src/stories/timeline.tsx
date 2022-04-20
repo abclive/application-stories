@@ -9,13 +9,13 @@ import Contact from "./content/Contact";
 import Projects from "./content/Projects";
 
 export const stories = [
-    {component: <Greet/>, time: 15},
-    {component: <Intro/>, time: 15},
-    {component: <Studies/>, time: 15},
-    {component: <DocExperience/>, time: 15},
-    {component: <CollectiveExperience/>, time: 15},
-    {component: <Projects/>, time: 18},
-    {component: <Summary/>, time: 11},
-    {component: <CodeReview/>, time: 9},
+    {component: <Greet/>, time: 20},
+    {component: <Intro/>, time: 20},
+    {component: <Studies/>, time: 20},
+    {component: <DocExperience/>, time: 20},
+    {component: <CollectiveExperience/>, time: 20},
+    {component: <Projects/>, time: 22},
+    {component: <Summary/>, time: 13},
+    {component: <CodeReview/>, time: 12},
     {component: <Contact/>, time: 20}
 ];

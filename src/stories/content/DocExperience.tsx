@@ -29,15 +29,15 @@ const translations = {
     ],
     tasks: [
         {
-            fr_CA: "📅 Développé le système de réservation et l'algorithme de disponibilités impliquant les dates et fuseaux horaires.",
+            fr_CA: "📅 Développement du système de réservation et l'algorithme de disponibilités impliquant les dates et fuseaux horaires.",
             en_CA: "📅 Developed the booking process and availability algorithm involving dates and timezones."
         },
         {
-            fr_CA: "🔎 Mis en place un service de récupération de données pour inclure le contenu d'autre repertoires sur la plateforme.",
+            fr_CA: "🔎 Mise en place d'un service de récupération de données pour inclure le contenu d'autre repertoires sur la plateforme.",
             en_CA: "🔎 Designed and implemented a data scraping service to include other online directories on the platform."
         },
         {
-            fr_CA: "💳 Integré un mode d'authentification gouvernemental utilisant des cartes d'identité électroniques.",
+            fr_CA: "💳 Intégration d'un mode d'authentification gouvernemental par cartes d'identité électroniques.",
             en_CA: "💳 Integrated a government protocol of authentication using electronic ID cards."
         }
     ]

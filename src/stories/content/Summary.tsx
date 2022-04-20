@@ -17,12 +17,12 @@ const translations = {
             en_CA: "🎨 An appreciation for simple designs and pretty code"
         },
         {
-            fr_CA: "🤔 Un esprit féru d'apprentissage, en constante recherche d'amélioration",
-            en_CA: "🤔 A constantly learning, improvement-seeking mindset"
+            fr_CA: "🤓 Un esprit féru d'apprentissage, en constante recherche d'amélioration",
+            en_CA: "🤓 A constantly learning, improvement-seeking mindset"
         },
         {
-            fr_CA: "🚌 Une passion pour l'urbanisme et la volonté de rendre le transport public plus accessible.",
-            en_CA: "🚌 A passion for urbanism and making public transit more accessible."
+            fr_CA: "🚌 Une passion pour l'urbanisme et la volonté de rendre le transport public plus accessible",
+            en_CA: "🚌 A passion for urbanism and making public transit more accessible"
         }
     ]
 };

@@ -6,8 +6,8 @@ import Button from "../ui/Button";
 
 const translations = {
     title: {
-        fr_CA: "Prenons contact",
-        en_CA: "Let's get in touch"
+        fr_CA: "Prenons contact!",
+        en_CA: "Let's get in touch!"
     },
     description: {
         fr_CA: "Merci d'avoir pris le temps de lire ma candidature. Parlons-nous, vous pouvez me contacter par email ou téléphone",

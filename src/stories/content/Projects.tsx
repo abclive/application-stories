@@ -23,8 +23,8 @@ const translations = {
     },
     rentals_tech: [{fr_CA: "Lazy loading", en_CA: "Lazy loading"}, {fr_CA: "AJAX", en_CA: "AJAX"}, {fr_CA: "Crons", en_CA: "Crons"}],
     rentals_description: {
-        fr_CA: "Un site hautement optimisé permettant aux utilisateurs de réserver en ligne directement via l'API de HomeAway. Le contenu, disponibilités et prix sont récupérés depuis l'API. Itérations basées sur les données d'usage.",
-        en_CA: "A highly optimized website enabling users to reserve online directly through HomeAway's API. Content, availability and pricing are pulled from the API, and improvements were implemented based on usage analytics."
+        fr_CA: "Un site permettant aux utilisateurs de réserver en ligne directement via l'API de HomeAway. Le contenu, disponibilités et prix sont récupérés depuis l'API. Itérations basées sur les données d'usage.",
+        en_CA: "A website enabling users to reserve online directly through HomeAway's API. Content, availability and pricing are pulled from the API, and improvements were implemented based on usage analytics."
     }
 };
 
