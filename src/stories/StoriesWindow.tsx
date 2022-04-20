@@ -84,8 +84,8 @@ function StoriesWindow() {
                 </div>
                 <div className="relative w-full h-full md:w-[395px] md:max-h-[800px] md:rounded-xl md:overflow-hidden md:shadow-xl">
                     <div className="absolute z-10 flex w-full h-full opacity-0">
-                        <div className="flex-1 h-full bg-red-500" onPointerDown={pause} onPointerUp={prevStory}>{activeStory - 1}</div>
-                        <div className="flex-1 h-full bg-green-500" onPointerDown={pause} onPointerUp={nextStory}>{activeStory + 1}</div>
+                        <div className="flex-1 h-full" onPointerDown={pause} onPointerUp={prevStory}></div>
+                        <div className="flex-1 h-full" onPointerDown={pause} onPointerUp={nextStory}></div>
                     </div>
                     <StoriesTimeline elapsed={elapsedTime} active={activeStory} stories={stories.map((story) => story.time)}/>
                     <div className="relative h-full">{currentStory.component}</div>
