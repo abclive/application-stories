@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import './App.css';
+import { useState } from 'react';
 import StoriesWindow from './stories/StoriesWindow';
 import { LitteraProvider } from '@assembless/react-littera';
 import LanguagePicker from './lang/LanguagePicker';
