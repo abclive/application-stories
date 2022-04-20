@@ -47,13 +47,13 @@ function Projects() {
                 <div className="flex gap-4 mt-8">
                     <div className="w-1/4">
                         <animated.div className="relative h-48 mt-2 overflow-hidden rounded shadow-lg" style={imgSpring}>
-                            <img className="object-cover w-full h-full" src="/rentals.png" alt=""/>
+                            <img className="object-cover w-full h-full" src="/restaurants.png" alt=""/>
                         </animated.div>
                     </div>
                     <div className="w-3/4">
                         <animated.p className="text-lg font-semibold font-title" style={projectsSpring}>{t.restaurants_title}</animated.p>
                         <div className="flex gap-2 mt-2">
-                            {restaurantPills.map((pillSpring, index) => <AnimatedPill style={pillSpring}>{t.restaurants_tech[index]}</AnimatedPill>)}
+                            {restaurantPills.map((pillSpring, index) => <AnimatedPill key={index} style={pillSpring}>{t.restaurants_tech[index]}</AnimatedPill>)}
                         </div>
                         <animated.p className="mt-4 text-sm" style={descSpring}>{t.restaurants_description}</animated.p>
                     </div>
@@ -62,7 +62,7 @@ function Projects() {
                     <div className="w-3/4">
                         <animated.p className="text-lg font-semibold font-title" style={projectsSpring}>{t.rentals_title}</animated.p>
                         <div className="flex gap-2 mt-2">
-                            {restaurantPills.map((pillSpring, index) => <AnimatedPill style={pillSpring}>{t.rentals_tech[index]}</AnimatedPill>)}
+                            {restaurantPills.map((pillSpring, index) => <AnimatedPill key={index} style={pillSpring}>{t.rentals_tech[index]}</AnimatedPill>)}
                         </div>
                         <animated.p className="mt-4 text-sm" style={descSpring}>{t.rentals_description}</animated.p>
                     </div>

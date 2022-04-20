@@ -59,10 +59,10 @@ function DocExperience() {
                 <animated.p className="text-3xl font-bold font-title" style={catSpring}>{t.category}</animated.p>
                 <ExperienceTitle title="Doc.fr" subtitle={t.jobTitle} date="2016 — 2017" description={t.subtitle}/>
                 <div className="flex gap-2 my-4">
-                    {pills.map((spring, index) => <AnimatedPill style={spring}>{t.tech[index]}</AnimatedPill>)}
+                    {pills.map((spring, index) => <AnimatedPill key={index} style={spring}>{t.tech[index]}</AnimatedPill>)}
                 </div>
                 <div className="px-4 mt-4">
-                    {tasks.map((spring, index) => <animated.p className="py-4" style={spring}>{t.tasks[index]}</animated.p>)}
+                    {tasks.map((spring, index) => <animated.p key={index} className="py-4" style={spring}>{t.tasks[index]}</animated.p>)}
                 </div>
             </div>
         </Wrapper>

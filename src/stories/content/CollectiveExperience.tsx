@@ -48,10 +48,10 @@ function CollectiveExperience() {
             <div className="w-full px-4 text-left">
                 <ExperienceTitle title="Collective Design" subtitle={t.jobTitle} date="2018 — 2022" description={t.subtitle}/>
                 <div className="flex gap-2 my-4">
-                    {pills.map((spring, index) => <AnimatedPill style={spring}>{t.tech[index]}</AnimatedPill>)}
+                    {pills.map((spring, index) => <AnimatedPill key={index} style={spring}>{t.tech[index]}</AnimatedPill>)}
                 </div>
                 <div className="px-4 mt-4">
-                    {tasks.map((spring, index) => <animated.p className="py-4" style={spring}>{t.tasks[index]}</animated.p>)}
+                    {tasks.map((spring, index) => <animated.p key={index} className="py-4" style={spring}>{t.tasks[index]}</animated.p>)}
                 </div>
             </div>
         </Wrapper>

@@ -14,6 +14,10 @@ const translations = {
     instructions: {
         fr_CA: "Naviguez d'un écran à l'autre en tappant sur la gauche ou la droite de la page comme n'importe quelle autre app avec des stories. Pour pauser, gardez votre doigt pressé sur l'écran.",
         en_CA: "You can navigate like any other stories app from screen to screen by tapping the left or right side of the page. You can pause by holding your finger on the screen."
+    },
+    instructions_desktop: {
+        fr_CA: "Cette experience est optimisée pour une utilisation sur téléphone. Naviguez d'un écran à l'autre en cliquant sur les fleches ou en appuyant sur les touches fléchées du clavier. Vous pouvez pauser en appuyant sur espace.",
+        en_CA: "This experience is optimized for smartphones. You can navigate by using the arrows on each side or by using the arrow keys of your keyboard. You can also pause by pressing the spacebar."
     }
 }
 
@@ -31,7 +35,8 @@ function Greet() {
             <animated.p className="flex w-full px-5" style={descSpring}>{t.description}</animated.p>
             <animated.div className="p-4 mx-4 mt-16 bg-black rounded bg-opacity-20" style={instrSpring}>
                 <p className="text-lg font-semibold">📖 Instructions</p>
-                <p className="flex w-full">{t.instructions}</p>
+                <p className="flex w-full md:hidden">{t.instructions}</p>
+                <p className="hidden w-full md:flex">{t.instructions_desktop}</p>
             </animated.div>
         </Wrapper>
     );

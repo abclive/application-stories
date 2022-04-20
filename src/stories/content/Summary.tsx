@@ -38,7 +38,7 @@ function Summary() {
         <Wrapper>
             <animated.p className="text-3xl font-bold font-title" style={titleSpring}>{t.title}</animated.p>
             <div className="px-4 mt-8">
-                {assetTrail.map((assetSpring, index) => <animated.p className="py-4 text-lg" style={assetSpring}>{t.assets[index]}</animated.p>)}
+                {assetTrail.map((assetSpring, index) => <animated.p key={index} className="py-4 text-lg" style={assetSpring}>{t.assets[index]}</animated.p>)}
             </div>
         </Wrapper>
     );
