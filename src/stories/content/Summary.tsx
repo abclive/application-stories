@@ -22,7 +22,7 @@ const translations = {
         },
         {
             fr_CA: "🚌 Une passion pour l'urbanisme et la volonté de rendre le transport public plus accessible",
-            en_CA: "🚌 A passion for urbanism and making public transit more accessible"
+            en_CA: "🚌 A passion for urbanism and making public transport more accessible"
         }
     ]
 };
