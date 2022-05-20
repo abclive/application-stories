@@ -8,8 +8,8 @@ const translations = {
         en_CA: "Hi Intiveo! 👋"
     },
     description: {
-        fr_CA: "Ceci est une candidature interactive pour la position de Developpeur web Full-stack.",
-        en_CA: "This is my application (pun intended) for your Full-stack Web Developer position."
+        fr_CA: "Ceci est une candidature interactive pour la position de Developpeur Laravel.",
+        en_CA: "This is my application (pun intended) for your Laravel Developer position."
     },
     instructions: [
         {
