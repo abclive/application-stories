@@ -31,7 +31,7 @@ function CodeReview() {
     return (
         <Wrapper>
             <div className="text-center">
-                <animated.p className="text-3xl font-bold font-title" style={titleSpring}>{t.title}</animated.p>
+                <animated.p className="text-3xl font-bold font-title text-intiveo" style={titleSpring}>{t.title}</animated.p>
                 <animated.p className="px-4 mt-8 text-lg" style={descSpring}>{t.description}</animated.p>
                 <div className="mt-8">
                     <AnimatedButton url="https://github.com/abclive/application-stories/tree/transit" style={ctaSpring}>{t.cta}</AnimatedButton>

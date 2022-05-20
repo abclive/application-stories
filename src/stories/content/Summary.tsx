@@ -9,8 +9,8 @@ const translations = {
     },
     assets: [
         {
-            fr_CA: "📚 Une forte experience sur les APIs et l'integration de données",
-            en_CA: "📚 A strong experience with APIs and data integration"
+            fr_CA: "📚 Une forte experience sur Laravel et sur le développement d'applications de santé",
+            en_CA: "📚 A strong experience with Laravel and in healthcare oriented applications"
         },
         {
             fr_CA: "🎨 Le plaisir des designs simples et du beau code",
@@ -21,8 +21,8 @@ const translations = {
             en_CA: "🤓 A constantly learning, improvement-seeking mindset"
         },
         {
-            fr_CA: "🚌 Une passion pour l'urbanisme et la volonté de rendre le transport public plus accessible",
-            en_CA: "🚌 A passion for urbanism and making public transport more accessible"
+            fr_CA: "🩺 Une grande motivation pour travailler sur des produits qui simplifient la vie des gens",
+            en_CA: "🩺 A strong motivation to work on products that matter and help people"
         }
     ]
 };
@@ -36,7 +36,7 @@ function Summary() {
     
     return (
         <Wrapper>
-            <animated.p className="text-3xl font-bold font-title" style={titleSpring}>{t.title}</animated.p>
+            <animated.p className="text-3xl font-bold font-title text-intiveo" style={titleSpring}>{t.title}</animated.p>
             <div className="px-4 mt-8">
                 {assetTrail.map((assetSpring, index) => <animated.p key={index} className="py-4 text-lg" style={assetSpring}>{t.assets[index]}</animated.p>)}
             </div>

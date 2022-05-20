@@ -41,7 +41,7 @@ function Education() {
     return (
         <Wrapper>
             <div className="w-full px-4 text-left">
-                <animated.p className="text-3xl font-bold font-title" style={catSpring}>{t.category}</animated.p>
+                <animated.p className="text-3xl font-bold font-title text-intiveo" style={catSpring}>{t.category}</animated.p>
                 <ExperienceTitle title={t.school} subtitle={t.title} date="2013 — 2016" description={t.subtitle}/>
                 <animated.div className="px-4 mt-8" style={contentSpring}>
                     <p>{t.skills}</p>

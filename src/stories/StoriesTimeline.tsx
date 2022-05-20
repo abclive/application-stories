@@ -13,8 +13,8 @@ function StoriesTimeline({elapsed, active, stories}: {elapsed: number, active: n
     return (
         <div className="absolute z-10 flex flex-row w-full gap-2 p-2">
             {stories.map((story, index) => 
-                <div className={'relative flex flex-1 h-2 rounded ' + ((index >= active) ? 'bg-opacity-20 bg-black' : 'bg-white')} key={index}>
-                    {(index === active) && <div ref={progressElt} className="absolute z-10 h-full transition-all duration-75 bg-white rounded"></div>}
+                <div className={'relative flex flex-1 h-2 rounded ' + ((index >= active) ? 'bg-intiveo/10' : 'bg-intiveo')} key={index}>
+                    {(index === active) && <div ref={progressElt} className="absolute z-10 h-full transition-all duration-75 rounded bg-intiveo"></div>}
                 </div>
             )}
         </div>

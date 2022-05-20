@@ -33,12 +33,12 @@ const translations = {
             en_CA: "📅 Developed the booking process and availability algorithm involving dates and timezones."
         },
         {
-            fr_CA: "🔎 Mise en place d'un service de récupération de données pour inclure le contenu d'autre repertoires sur la plateforme.",
-            en_CA: "🔎 Designed and implemented a data scraping service to include other online directories on the platform."
-        },
-        {
             fr_CA: "💳 Intégration d'un mode d'authentification gouvernemental par cartes d'identité électroniques.",
             en_CA: "💳 Integrated a government protocol of authentication using electronic ID cards."
+        },
+        {
+            fr_CA: "🔎 Mise en place d'un service de récupération de données pour inclure le contenu d'autre repertoires sur la plateforme.",
+            en_CA: "🔎 Designed and implemented a data scraping service to include other online directories on the platform."
         }
     ]
 };
@@ -56,7 +56,7 @@ function DocExperience() {
     return (
         <Wrapper>
             <div className="w-full px-4 text-left">
-                <animated.p className="text-3xl font-bold font-title" style={catSpring}>{t.category}</animated.p>
+                <animated.p className="text-3xl font-bold font-title text-intiveo" style={catSpring}>{t.category}</animated.p>
                 <ExperienceTitle title="Doc.fr" subtitle={t.jobTitle} date="2016 — 2017" description={t.subtitle}/>
                 <div className="flex gap-2 my-4">
                     {pills.map((spring, index) => <AnimatedPill key={index} style={spring}>{t.tech[index]}</AnimatedPill>)}

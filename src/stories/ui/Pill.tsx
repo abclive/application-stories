@@ -3,7 +3,7 @@ import { animated } from 'react-spring';
 
 function Pill({style, children}: PropsWithChildren<{style: CSSProperties}>) {
     return (
-        <animated.div className="px-4 py-2 text-xs font-semibold text-white bg-black rounded-full bg-opacity-20" style={style}>{children}</animated.div>
+        <animated.div className="px-4 py-2 text-xs font-semibold rounded-full text-intiveo bg-intiveo/10" style={style}>{children}</animated.div>
     );
 }
 

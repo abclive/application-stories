@@ -11,12 +11,12 @@ function LanguagePicker({onPicked}: {onPicked: Function}) {
 
     return (
         <div className="relative w-full h-full">
-            <div className="relative flex flex-wrap items-center content-center justify-center w-full h-full gap-8 bg-transit">
+            <div className="relative flex flex-wrap items-center content-center justify-center w-full h-full gap-8 bg-intiveo-almost-white">
                 <div className="flex justify-center w-full">
-                    <button className="flex p-4 text-xl font-bold text-white bg-black rounded-xl bg-opacity-20" onClick={() => pickLocale('fr_CA')}>Français</button>
+                    <button className="flex p-4 text-xl font-bold text-white bg-intiveo-light-blue rounded-xl" onClick={() => pickLocale('en_CA')}>English</button>
                 </div>
                 <div className="flex justify-center w-full">
-                    <button className="flex p-4 text-xl font-bold text-white bg-black rounded-xl bg-opacity-20" onClick={() => pickLocale('en_CA')}>English</button>
+                    <button className="flex p-4 text-xl font-bold text-white bg-intiveo-light-blue rounded-xl" onClick={() => pickLocale('fr_CA')}>Français</button>
                 </div>
             </div>
         </div>

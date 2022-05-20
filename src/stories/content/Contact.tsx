@@ -28,7 +28,7 @@ function Contact() {
     return (
         <Wrapper>
             <div className="text-center">
-                <animated.p className="text-3xl font-bold font-title" style={titleSpring}>{t.title}</animated.p>
+                <animated.p className="text-3xl font-bold font-title text-intiveo" style={titleSpring}>{t.title}</animated.p>
                 <animated.p className="px-4 mt-8 text-lg" style={descSpring}>{t.description}</animated.p>
                 <div className="flex flex-wrap justify-center gap-4 mt-8">
                     <AnimatedButton url="tel:+14388862209" style={btnSpring}>☎️ (438) 886-2209</AnimatedButton>

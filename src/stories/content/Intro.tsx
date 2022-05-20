@@ -8,12 +8,12 @@ const translations = {
         en_CA: "I'm Raphael"
     },
     description: {
-        fr_CA: "Je suis un développeur passionné par la tech, le cinéma et l'urbanisme. Je travaille dans le développement web depuis 2016, j'ai conçu des applications, dashboards et APIs pour divers domaines.",
-        en_CA: "A developer passionate about tech, cinema and urbanism. I've been working in web development since 2016, building applications, dashboards, and APIs in diverse domains."
+        fr_CA: "Basé à Montréal, je suis un développeur passionné par la tech, le cinéma et l'urbanisme. Je travaille dans le développement web depuis 2016, j'ai conçu des applications, dashboards et APIs pour divers domaines.",
+        en_CA: "Based in Montreal, I'm a developer passionate about tech, cinema and urbanism. I've been working in web development since 2016, building applications, dashboards, and APIs in diverse domains."
     },
     next: {
-        fr_CA: "Je cherche la prochaine étape, travailler avec une compagnie qui supporte des causes auxquelles je crois, comme Transit!",
-        en_CA: "I'm now looking to take the next step, working with companies that support causes I believe in, like Transit!"
+        fr_CA: "Je cherche la prochaine étape, travailler avec une compagnie qui supporte des causes auxquelles je crois, comme Intiveo!",
+        en_CA: "I'm now looking to take the next step, working with companies that support causes I believe in, like Intiveo!"
     },
     alt: {
         fr_CA: "Une photo de moi a coté de la rivière Saguenay",
@@ -35,9 +35,9 @@ function Intro() {
             <animated.div className="w-32 h-32 overflow-hidden rounded-full shadow-2xl" style={imgSpring}>
                 <img className="object-cover w-full h-full" src="/headshot.png" alt={t.alt}/>
             </animated.div>
-            <animated.h1 className="flex w-full p-5 text-4xl font-bold font-title" style={titleSpring}>{t.title}</animated.h1>
+            <animated.h1 className="flex w-full p-5 text-4xl font-bold font-title text-intiveo" style={titleSpring}>{t.title}</animated.h1>
             <animated.p className="flex w-full px-5" style={descSpring}>{t.description}</animated.p>
-            <animated.p className="flex w-full px-5 mt-8 font-semibold" style={nextSpring}>{t.next}</animated.p>
+            <animated.p className="flex w-full px-5 mt-8 font-semibold text-gray-800" style={nextSpring}>{t.next}</animated.p>
         </Wrapper>
     );
 }

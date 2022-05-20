@@ -8,9 +8,9 @@ function ExperienceTitle({title, date, subtitle, description}: {title: string, d
 
     return (
         <div>
-            <animated.p className="mt-8 text-2xl font-bold" style={titleSpring}>{title} <span className="ml-2 text-lg font-normal text-transit-dark">{date}</span></animated.p>
-            <animated.p className="text-xl font-semibold text-transit-almost-white" style={subtitleSpring}>{subtitle}</animated.p>
-            <animated.p className="text-sm text-transit-almost-white" style={descSpring}>{description}</animated.p>
+            <animated.p className="mt-8 text-2xl font-bold text-intiveo" style={titleSpring}>{title} <span className="ml-2 text-lg font-normal text-intiveo-light-blue">{date}</span></animated.p>
+            <animated.p className="text-xl font-semibold text-gray-700" style={subtitleSpring}>{subtitle}</animated.p>
+            <animated.p className="text-sm text-gray-600" style={descSpring}>{description}</animated.p>
         </div>
     );
 }

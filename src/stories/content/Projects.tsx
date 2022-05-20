@@ -14,8 +14,8 @@ const translations = {
     },
     restaurants_tech: [{fr_CA: "Typescript", en_CA: "Typescript"}, {fr_CA: "Pusher", en_CA: "Pusher"}, {fr_CA: "PWA", en_CA: "PWA"}],
     restaurants_description: {
-        fr_CA: "Une app multi client pour restaurants comprenant un panel d'administration et un système de point de ventes.",
-        en_CA: "A multi-tenancy app for restaurants featuring a back-end administration panel and a Point of Sale system."
+        fr_CA: "Une app multi client pour restaurants comprenant un panel d'administration et un système de point de ventes avec un flux de travail par slot de temps.",
+        en_CA: "A multi-tenancy app for restaurants featuring a back-end administration panel and a Point of Sale system with a time-slot workflow."
     },
     rentals_title: {
         fr_CA: "Location de vacances",
@@ -43,7 +43,7 @@ function Projects() {
     return (
         <Wrapper>
             <div className="w-full px-4 text-left">
-                <animated.p className="text-3xl font-bold font-title" style={titleSpring}>{t.title}</animated.p>
+                <animated.p className="text-3xl font-bold font-title text-intiveo" style={titleSpring}>{t.title}</animated.p>
                 <div className="flex gap-4 mt-8">
                     <div className="w-1/4">
                         <animated.div className="relative h-48 mt-2 overflow-hidden rounded shadow-lg" style={imgSpring}>
@@ -51,7 +51,7 @@ function Projects() {
                         </animated.div>
                     </div>
                     <div className="w-3/4">
-                        <animated.p className="text-lg font-semibold font-title" style={projectsSpring}>{t.restaurants_title}</animated.p>
+                        <animated.p className="text-lg font-bold font-title text-intiveo" style={projectsSpring}>{t.restaurants_title}</animated.p>
                         <div className="flex gap-2 mt-2">
                             {restaurantPills.map((pillSpring, index) => <AnimatedPill key={index} style={pillSpring}>{t.restaurants_tech[index]}</AnimatedPill>)}
                         </div>
@@ -60,7 +60,7 @@ function Projects() {
                 </div>
                 <div className="flex gap-4 mt-8">
                     <div className="w-3/4">
-                        <animated.p className="text-lg font-semibold font-title" style={projectsSpring}>{t.rentals_title}</animated.p>
+                        <animated.p className="text-lg font-bold font-title text-intiveo" style={projectsSpring}>{t.rentals_title}</animated.p>
                         <div className="flex gap-2 mt-2">
                             {restaurantPills.map((pillSpring, index) => <AnimatedPill key={index} style={pillSpring}>{t.rentals_tech[index]}</AnimatedPill>)}
                         </div>

@@ -14,8 +14,8 @@ const translations = {
         en_CA: "A web agency designing and implementing digital services front to back"
     },
     tech: [
-        {fr_CA: "Vue",en_CA: "Vue"},
         {fr_CA: "Laravel",en_CA: "Laravel"},
+        {fr_CA: "Vue",en_CA: "Vue"},
         {fr_CA: "Tailwind",en_CA: "Tailwind"},
         {fr_CA: "Git",en_CA: "Git"},
     ],

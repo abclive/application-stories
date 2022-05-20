@@ -4,8 +4,8 @@ import Wrapper from "../ui/Wrapper";
 
 const translations = {
     title: {
-        fr_CA: "Allô Transit! 👋",
-        en_CA: "Hi Transit! 👋"
+        fr_CA: "Allô Intiveo! 👋",
+        en_CA: "Hi Intiveo! 👋"
     },
     description: {
         fr_CA: "Ceci est une candidature interactive pour la position de Developpeur web Full-stack.",
@@ -47,10 +47,10 @@ function Greet() {
 
     return (
         <Wrapper>
-            <animated.h1 className="flex w-full p-5 text-4xl font-bold font-title" style={titleSpring}>{t.title}</animated.h1>
-            <animated.p className="flex w-full px-5" style={descSpring}>{t.description}</animated.p>
-            <animated.div className="p-4 mx-4 mt-16 bg-black rounded bg-opacity-20" style={instrSpring}>
-                <p className="text-lg font-semibold">📖 Instructions</p>
+            <animated.h1 className="flex w-full p-5 text-4xl font-bold font-title text-intiveo" style={titleSpring}>{t.title}</animated.h1>
+            <animated.p className="flex w-full px-5 text-gray-800" style={descSpring}>{t.description}</animated.p>
+            <animated.div className="p-4 mx-4 mt-16 rounded bg-intiveo-almost-white" style={instrSpring}>
+                <p className="text-lg font-semibold text-intiveo">📖 Instructions</p>
                 {t.instructions.map((instructions, index) => <p key={index} className="flex w-full py-2 md:hidden">{instructions}</p>)}
                 {t.instructions_desktop.map((instructions, index) => <p key={index} className="hidden w-full py-2 md:flex">{instructions}</p>)}
             </animated.div>
